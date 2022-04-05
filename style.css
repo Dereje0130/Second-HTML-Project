@@ -100,11 +100,17 @@ nav{
 }
 .category{
     width: 105px;
-    height: 80px;
+    height: 60px;
     background: rgba(255,61,0,0.15);
     margin: 0 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .category img{
     width: 25px;
-    
+    margin-bottom: 5px;
+
 }
