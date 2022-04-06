@@ -17,7 +17,8 @@ nav{
     justify-content: space-between;
 }
 .logo{
-    width: 140px;
+    width: 50px;
+
 }
 .nav-links{
     padding: 28px 0;
@@ -99,8 +100,8 @@ nav{
     margin-top: 40px;
 }
 .category{
-    width: 105px;
-    height: 60px;
+    width: 120px;
+    height: 70px;
     background: rgba(255,61,0,0.15);
     margin: 0 10px;
     font-size: 12px;
@@ -110,7 +111,7 @@ nav{
     flex-direction: column;
 }
 .category img{
-    width: 25px;
+    width: 35px;
     margin-bottom: 5px;
 
 }
