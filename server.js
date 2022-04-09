@@ -1,9 +1,16 @@
-const http = require('http')
-const fs = require('fs')
+const express = require('express');
+const path = require('path');
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream('index.html').pipe(res)
-})
+const server = express();
+const port = process.env.PORT || 8080;
 
-server.listen(process.env.PORT || 3000)
+// sendFile will go here
+server.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+server.use(express.static('public'));
+
+server.listen(port);
+console.log('Server started at http://localhost:' + port);
+
