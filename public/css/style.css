@@ -16,7 +16,9 @@ nav{
     justify-content: space-between;
 }
 .logo{
-    width: 80px;
+    width: 200px;
+    padding: 15px; ;
+     
 
 }
 .nav-links{
@@ -29,13 +31,13 @@ nav{
 }
 .nav-links li a{
     text-decoration: none;
-    color: #fff;
+    color: white;
     padding: 5px 0;
     position: relative;
 }
 .nav-links li a::after{
     content: '';
-    background: #ff3d00;
+    background: rgb(255, 0, 0);
     width: 0;
     height: 2px;
     position: absolute;
@@ -48,8 +50,8 @@ nav{
     width: 100%;
 }
 .btn{
-    background: #ff3d00;
-    color: #fff;
+    background: orangered;
+    color: white;
     padding: 10px 30px;
     border-radius: 3px;
     cursor: pointer;
@@ -62,7 +64,7 @@ nav{
     max-width: 900px;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
+    color: darkblue;
     padding: 50px;
 
 }
@@ -70,6 +72,7 @@ nav{
     font-size: 65px;
     font-weight: 600;
     margin-bottom: 40px;
+    color: yellowgreen;
 }
 .content form{
     background: #fff;
@@ -101,16 +104,31 @@ nav{
 .category{
     width: 120px;
     height: 70px;
-    background: rgba(35, 140, 245, 0.947);
+    background: yellowgreen;
     margin: 0 10px;
     font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
+    
 }
 .category img{
     width: 35px;
     margin-bottom: 5px;
 
 }
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+
+}
+
+
